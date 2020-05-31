@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bye Medicine</title>
+</head>
+<body>
+	<h1> Buy Medicine</h1>  
+	<a href="/home">Back</a> |
+	<a href="/logout">logout</a>
+
+	<br><br>
+
+	
+		
+		<% for(var i=0; i < uList.length; i++){ %>
+		    <table><tr>
+			<td>cart id: </td> <td><%= uList[i].id %></td>
+				
+			</tr>
+			<tr>
+		    <td>Medicine Name: </td> <td><%= uList[i].product_name %></td>
+				
+			</tr>
+			<tr>
+			<td>Medecine ID: </td> <td><%= uList[i].user_id %></td>
+			</tr>
+				<tr><td>Buy this:</td><td><a href="/home/cart/<%= uList[i].medicine_name %>/<%=uList[i].id%>"> Buy</a></td></tr>
+			</table>
+			</br>
+		
+		<% } %>
+	
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+	<h1> Edit Page</h1>  
+	<a href="/home">Back</a> |
+	<a href="/logout">logout</a>
+
+<br>
+	<form method="post">
+	<table width="300px" >
+		<tr>
+			<td width="35%">Uploader ID</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="uploader_id" value="<%=uploader_id%>"></td>
+		</tr>
+		<tr>
+			<td width="35%">Medicine Name</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="medicine_name" value="<%=medicine_name%>"></td>
+		</tr>
+		<tr>
+			<td>Medicine Company Name</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="company_name" value="<%=company_name%>"></td>
+		</tr>
+		<tr>
+			<td>Production Date</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="production_date" value="<%=production_date%>"></td>
+		</tr>
+        
+        <tr>
+			<td width="35%">Name</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="expired_date" value="<%=expired_date%>"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="medicine_type" value="<%=medicine_type%>"></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td width="2%">:</td>
+			<td><input type="text" name="medicine_description" value="<%=medicine_description%>"></td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td width="2%"></td>
+			<td><input type="submit" name="update" value="Update"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
